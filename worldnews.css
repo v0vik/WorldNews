@@ -9,7 +9,6 @@ body {
 header {
   color: #EEEEEE;
   padding-left: 15px;
-
 }
 
 h2 {
@@ -49,7 +48,6 @@ button {
   height: 400px;
   background: #F1F1F1;
   margin:5px;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
