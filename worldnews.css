@@ -65,3 +65,7 @@ button {
   height: 200px;
   margin: 0px auto;
 }
+
+#news-container article div:first-of-type {
+  margin-top: -40px;
+} 

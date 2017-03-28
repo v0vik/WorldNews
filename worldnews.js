@@ -2,7 +2,7 @@
 window.onload = function () {
 
   function fetchNews(source) {
-    console.log(source);
+    
     const url = new URL('https://newsapi.org/v1/articles');
 
     url.searchParams.append('source', source);
@@ -20,10 +20,10 @@ window.onload = function () {
     const newsContainer = document.getElementById("news-container");
     newsContainer.innerHTML = "";
     for (let i = 0; i < 10; i++) {
-      console.log(result);
 
       let node = document.createElement("ARTICLE");
       node.innerHTML = '<img src="' + result.articles[i].urlToImage + '" alt="No picture">' +
+        '<div>' + result.articles[i].publishedAt.slice(0,10) + '</div>' +
         '<div>' + result.articles[i].title + '</div>' +
         '<a href=' + result.articles[i].url + '>Read more...</a>';
       newsContainer.appendChild(node);
@@ -35,12 +35,12 @@ window.onload = function () {
 
 
 
-  let sources = ["bbc-news", "bloomberg", "hacker-news", "fox-sports"];
+  let sources = ["bbc-news", "bloomberg", "national-geographic", "fox-sports"];
 
   let b = document.getElementsByClassName("button");
 
   sources.forEach((source, i) => {
-    b[i].addEventListener("click", function () { return fetchNews(source) });
+    b[i].addEventListener("click", () => fetchNews(source));
   });
 
 }
