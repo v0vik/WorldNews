@@ -9,6 +9,8 @@ window.onload = function () {
     url.searchParams.append('sortBy', 'top');
     url.searchParams.append('apiKey', 'd26e136a686147968d0597343a0979b7');
 
+    document.getElementById("source-name").innerHTML = source;
+
     return fetch(url)
       .then(response => response.json())
       .then((result) => { createNewsItem(result); })
