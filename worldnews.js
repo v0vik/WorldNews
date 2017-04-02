@@ -43,4 +43,6 @@ window.onload = function () {
     b[i].addEventListener("click", () => fetchNews(source));
   });
 
+  fetchNews("bbc-news");
+
 }
