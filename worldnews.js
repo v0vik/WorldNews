@@ -37,7 +37,7 @@ window.onload = function () {
 
 
 
-  let sources = ["bbc-news", "bloomberg", "national-geographic", "fox-sports"];
+  let sources = ["bbc-news", "new-scientist", "al-jazeera-english", "reuters"];
 
   let b = document.getElementsByClassName("button");
 
