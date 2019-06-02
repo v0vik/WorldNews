@@ -4,4 +4,4 @@ from News API
 Simple news site.
 Using API with JavaScript Fetch.
 
-url: 
+url: https://v0vik.github.io/WorldNews/index.html
